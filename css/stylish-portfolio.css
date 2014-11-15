@@ -1,0 +1,304 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+
+/*  Navigation */
+
+.navbar {
+    margin-bottom: 0;
+    
+    text-transform: uppercase;
+    background-color:#232323;
+    border-radius:0;
+}
+
+.navbar-custom .nav li a {
+    font-size:13px;
+    color:#fff;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    letter-spacing:1px;
+    font-weight:600;
+
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.nav > li > a:hover
+ {
+    outline: 0;
+    color:#777;
+    background:none;
+    
+}
+
+.navbar-toggle {
+    padding: 4px 6px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.navbar-toggle:focus,
+.navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-brand {
+    float: left;
+    color: #fff;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.navbar-brand img {
+    margin-top:10px;
+    margin-right:12px;
+}
+
+.navbar-brand:focus {
+    outline: 0;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+/* Callout */
+
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+}
+
+
+
+
+
+
+/*========================================================================*/
+/*   Works
+/*========================================================================*/
+
+#works{
+    padding:80px 0px 60px;
+}
+
+.portfolio-filters{
+    margin-bottom: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.portfolio-filters li{
+    display:inline-block;
+    border:1px solid #DDD;
+    padding: 10px 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-right:5px;
+}
+
+.portfolio-filters li:hover{
+    background-color: #AF946D;
+    color:#fff;
+    border-color:#000;
+}
+
+.portfolio-filters li.active{
+    background-color:#AF946D;
+    color:#fff;
+    border-color:#AF946D;
+}
+
+#grid .mix{
+    display: none;
+    opacity: 0;
+    margin-bottom:20px;
+}
+
+.image-wrapper{
+    position: relative;
+}
+
+.image-wrapper img{
+    width:100% !important;
+    height:auto;
+}
+
+.image-overlay{
+    position: absolute;
+    text-align: center;
+    background: rgba(175, 148, 109, .6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.image-overlay span{
+    position: absolute;
+    top:40%;
+    color: #FFF;
+    left:45%;
+    font-size:30px;
+}
+
+.image-wrapper:hover .image-overlay{
+    opacity: 1;
+}
+
+
+
+
+
+
