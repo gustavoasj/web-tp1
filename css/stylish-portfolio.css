@@ -154,12 +154,18 @@ hr.small {
     margin-bottom: 30px;
 }
 
+/* Curriculo */
+
+.curriculo {
+    padding: 50px 0;
+}
+
 /* Callout */
 
 .callout {
     display: table;
     width: 100%;
-    height: 400px;
+    height: 300px;
     color: #fff;
     background: url(../img/callout.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -214,3 +220,9 @@ footer {
     padding: 100px 0;
 }
 
+#panel{
+    width:30%; 
+    height: 300px ;
+    float:right; 
+    overflow: auto; 
+}
